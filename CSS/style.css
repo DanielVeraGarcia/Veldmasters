@@ -78,10 +78,12 @@ nav{
   }
   nav ul li.btn{
     display: none;
+    margin: 0;
   }
   nav ul li.btn.hide i:before{
     content: '\f00d';
   }
+
   @media all and (max-width: 900px){
     nav{
       padding: 5px 30px;
@@ -161,16 +163,19 @@ nav{
     font-weight: 600;
   }
 
-    .card-list .breed {
+    .card-list .tag {
     background-color: var(--gris-50);
-    color: var(--gris-500);
+    color: var(--color-primario);
   }
 
    .card-item h3 {
     color: var(--color-secundario);
     font-size: 1.438rem;
     margin-top: 28px;
-    font-weight: 600;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.4;
+    text-decoration: none !important;
   }
 
   .card-item .arrow{
@@ -317,7 +322,8 @@ footer span{
   transition: .3s;
 }
 .right form .btn button:hover{
-  background: #000;
+  background: var(--color-secundario);
+  color: var(--color-primario);
 }
 .bottom center{
   padding: 5px;
@@ -333,6 +339,9 @@ footer span{
 }
 .bottom center a:hover{
   text-decoration: underline;
+}
+footer .btn{
+  --bs-btn-padding-x: 0 !important;
 }
 @media screen and (max-width: 900px) {
   footer{

@@ -109,7 +109,7 @@ nav{
 /*Hero*/
  .hero {
     position: relative;
-    background: linear-gradient(to bottom, #1f2933 , #1f2933c5), url("https://images.unsplash.com/photo-1573152143286-0c422b4d2175?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center fixed;
+    background: linear-gradient(to bottom, #1f2933 , #1f2933c5), url("https://www.beefcentral.com/wp-content/uploads/2018/08/Angus-breeders.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -118,7 +118,6 @@ nav{
     padding-top: 150px;
     height: 350px;
     letter-spacing: 2px;
-    /*border-radius: 0 0 90% 90%/0 0 30% 30%;*/
     z-index: 2;
   }
    .hero:before {
@@ -221,158 +220,162 @@ nav{
 
 /*Footer*/
 footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: var(--color-primario);
+}
+footer p{
+  color: var(--color-secundario);
+}
+footer span{
+  color: var(--gris-50);
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  color: var(--gris-50);
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: var(--color-secundario);
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: var(--color-terciario);
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: var(--color-primario);
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: var(--color-terciario);
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: var(--color-primario);
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: var(--color-terciario);
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 80px;
+  border: none;
+  outline: none;
+  background: var(--color-terciario);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: var(--color-secundario);
+  color: var(--color-primario);
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+footer .btn{
+  --bs-btn-padding-x: 0 !important;
+}
+@media screen and (max-width: 900px) {
+  footer{
     position: relative;
     bottom: 0px;
-    width: 100%;
-    background: var(--color-primario);
-  }
-  footer p{
-    color: var(--color-secundario);
-  }
-  footer span{
-    color: var(--gris-50);
   }
   .main-content{
-    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .main-content .box{
-    flex-basis: 50%;
-    padding: 10px 20px;
+    margin: 5px 0;
   }
-  .box h2{
-    color: var(--gris-50);
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .box .content{
-    margin: 20px 0 0 0;
-    position: relative;
-  }
-  .box .content:before{
-    position: absolute;
-    content: '';
-    top: -10px;
-    height: 2px;
-    width: 100%;
-    background: var(--color-secundario);
-  }
-  .box .content:after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    background: var(--color-terciario);
-    top: -10px;
-  }
-  .left .content p{
-    text-align: justify;
-  }
-  .left .content .social{
-    margin: 20px 0 0 0;
-  }
-  .left .content .social a{
-    padding: 0 2px;
-  }
-  .left .content .social a span{
-    height: 40px;
-    width: 40px;
-    background: var(--color-primario);
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  .left .content .social a span:hover{
-    background: var(--color-terciario);
-  }
-  .center .content .fas{
-    font-size: 1.4375rem;
-    background: var(--color-primario);
-    height: 45px;
-    width: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .center .content .fas:hover{
-    background: var(--color-terciario);
-  }
-  .center .content .text{
-    font-size: 1.0625rem;
-    font-weight: 500;
-    padding-left: 10px;
-  }
-  .center .content .phone{
-    margin: 15px 0;
-  }
-  .right form .text{
-    font-size: 1.0625rem;
-    margin-bottom: 2px;
-    color: #656565;
-  }
-  .right form .msg{
-    margin-top: 10px;
-  }
-  .right form input, .right form textarea{
-    width: 100%;
-    font-size: 1.0625rem;
-    background: #151515;
-    padding-left: 10px;
-    border: 1px solid #222222;
-  }
-  .right form input:focus,
-  .right form textarea:focus{
-    outline-color: #3498db;
-  }
-  .right form input{
-    height: 35px;
-  }
-  .right form .btn{
-    margin-top: 10px;
-  }
-  .right form .btn button{
-    height: 40px;
-    width: 80px;
-    border: none;
-    outline: none;
-    background: var(--color-terciario);
-    font-size: 1.0625rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s;
-  }
-  .right form .btn button:hover{
-    background: #000;
-  }
-  .bottom center{
-    padding: 5px;
-    font-size: 0.9375rem;
-    background: #151515;
-  }
-  .bottom center span{
-    color: #656565;
-  }
-  .bottom center a{
-    color: var(--color-secundario);
-    text-decoration: none;
-  }
-  .bottom center a:hover{
-    text-decoration: underline;
-  }
-  @media screen and (max-width: 900px) {
-    footer{
-      position: relative;
-      bottom: 0px;
-    }
-    .main-content{
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-    .main-content .box{
-      margin: 5px 0;
-    }
-  }
+}
