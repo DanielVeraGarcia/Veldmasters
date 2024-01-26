@@ -12,6 +12,10 @@ body{
     font-family: 'Chivo', sans-serif;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 :root{
     --color-primario:#0f0f0f;
     --color-secundario:#fff;
@@ -177,7 +181,10 @@ nav{
     font-weight: 500;
     text-decoration: none;
     line-height: 1.4;
-    text-decoration: none !important;
+  }
+
+  h3{
+    text-decoration: none;
   }
 
   .card-item .arrow{
