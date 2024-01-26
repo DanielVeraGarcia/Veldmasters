@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
 
 *{
     margin: 0;
@@ -61,6 +62,7 @@ nav{
     color: var(--color-secundario);
     font-size: 23px;
     font-weight: 600;
+    font-family: 'Roboto Serif', serif;
     cursor: default;
     user-select: none;
   }
@@ -109,12 +111,12 @@ nav{
 /*Hero*/
  .hero {
     position: relative;
-    background: linear-gradient(to bottom, #1f2933 , #1f2933c5), url("https://www.beefcentral.com/wp-content/uploads/2018/08/Angus-breeders.jpg") no-repeat center center fixed;
+    background: url("https://redamericancattle.com/wp-content/uploads/2022/10/RED_AMERICAN_CATTLE_NRJB_0431-scaled.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     text-align: center;
-    color: #fff;
+    color: var(--color-secundario);
     padding-top: 150px;
     height: 350px;
     letter-spacing: 2px;
@@ -127,17 +129,15 @@ nav{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #07a0b437;
     z-index: -1;
   }
     .hero h1 {
     font-size: 1rem;
-    line-height: 1.3;
     }
     .hero h1 span {
     font-size: 2rem;
-    color: #fff;
-    border-bottom: 3px solid #fff;
+    color: var(--color-secundario);
+    border-bottom: 3px solid var(--color-secundario);
     padding-bottom: 9px;
     line-height: 3;
    
@@ -146,35 +146,32 @@ nav{
       font-size: 1rem;
       line-height: 1.3;
       }
- 
- 
    
-  @media screen and (max-width: 991px){
+  @media screen and (max-width: 990px){
     .hero {
       position: relative;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
       text-align: center;
-      color: #fff;
+      color: var(--color-secundario);
       padding-top: 150px;
       height: 300px;
       letter-spacing: 2px;
-      border-radius: 0 0 30% 10%/0 0 30% 0%;
       }
-      .hero:before {
-          border-radius: 0 0 90% 90%/0 0 30% 30%;
-      }
-       .hero h1 {
+      .hero h1 {
       font-size: 1rem;
       line-height: 1.3;
       }
       .hero h1 span {
       font-size: 1.2rem;
-      color: var(--blanco);
-      border-bottom: 3px solid var(--blanco);
+      color: var(--color-secundario);
+      border-bottom: 3px solid var(--color-secundario);
       padding-bottom: 7px;
       line-height: 3;
+      }
+      .section__text h3{
+        margin-top: 1rem;
       }
    }
  
@@ -190,32 +187,36 @@ nav{
  
  
   /*Agregar el inicio 01 Banner*/
- 
- 
+
   .section__text .row{
-    margin-top: 0%;
-    margin-bottom: 0%;
-    width: 95%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
     margin: 0 auto;
   }
   .section__text .row .col-md-6{
     background: transparent;
-    margin-right: -2%;
-    padding: 5%;
   }
   .section__text h3{
-    font-size: 3rem;
-    color: #0b0b0b79;
-    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    font-weight: 300;
+    margin-bottom: 1rem;
   }
   .section__text p{
-    margin-top: 10%;
-    color: #090909;
+    font-size: 1rem;
+    color: var(--color-primario);
+    margin-bottom: 0;
   }
-  .section__text img
-  {
+  .section__text img{
     width: 100%;
-    border-radius: 5%;
+  }
+  .accordion{
+  padding-top: 2.5%;
+  width: 100%;
+  }
+  .accordion-button:not(.collapsed){
+  background: var(--color-terciario) !important;
   }
 
 /*Footer*/
